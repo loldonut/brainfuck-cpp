@@ -62,6 +62,10 @@ int BFProgram(std::vector<std::string> args)
                 res = res + ptrs[pointing];
                 break;
 
+            case ',':
+                ptrs[pointing] = res[res.length() - 1]; 
+                break;
+
             case '[':
                 if (ptrs[pointing] == 0)
                     isLooping = true;
