@@ -79,6 +79,9 @@ int BFProgram(std::vector<std::string> args)
                 else
                     loops.pop_back();
                 break;
+
+            default:
+                continue;
         }
     }
 
