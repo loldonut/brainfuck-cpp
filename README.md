@@ -4,7 +4,7 @@ Brainfuck made in C++
 
 ## How to Run
 
-- Clone the Repo:
+### Clone the Repo:
 
 **HTTPS**
 
@@ -18,7 +18,7 @@ git clone https://github.com/loldonut/brainfuck-cpp
 git clone git@github.com:loldonut/brainfuck-cpp
 ```
 
-- Compiling (using `make` / `Makefile`)
+### Compiling (using `make` / `Makefile`)
 
 Compile the program by simply doing:
 
