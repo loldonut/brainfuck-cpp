@@ -20,7 +20,7 @@ int BFProgram(std::vector<std::string> args)
     std::vector<int> loops;
     std::string res;
 
-    for (int i = 0; i < Code.length(); i++)
+    for (std::size_t i = 0; i < Code.length(); i++)
     {
         const char curChar = Code[i];
 
