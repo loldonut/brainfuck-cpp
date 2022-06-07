@@ -12,7 +12,7 @@
 int BFProgram(std::vector<std::string> args)
 {
     std::string Code = args[0];
-
+    
     char ptrs[STACK_SIZE] = {0};
     std::size_t pointing = 0;
     bool isLooping = false;
@@ -39,13 +39,13 @@ int BFProgram(std::vector<std::string> args)
         switch (curChar)
         {
             case '>':
-                if (pointing >= STACK_SIZE)
+                if (pointing == STACK_SIZE)
                     break;
                 ++pointing;
                 break;
 
             case '<':
-                if (pointing <= 0)
+                if (pointing == 0)
                     break;
                 --pointing;
                 break;
@@ -63,7 +63,7 @@ int BFProgram(std::vector<std::string> args)
                 break;
 
             case ',':
-                ptrs[pointing] = res[res.length() - 1]; 
+                std::cin >> std::noskipws >> ptrs[pointing];
                 break;
 
             case '[':
